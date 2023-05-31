@@ -1,0 +1,442 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000;
+}
+
+h3 {
+    font-size: 20px;
+    color: #fff;
+}
+
+    /* header */
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #141414;
+    box-shadow: 0px 2px 15px gray;
+    z-index: 200;
+    position: sticky;
+    top: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    background-color: #141414;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a{
+    font-size: 16px;
+    font-weight: 600;
+    color:#fff;
+    padding:5px;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s ease;
+    background-color: #141414;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color:#088178;
+    background-color: #000;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width:30%;
+    height:2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left:26px;
+}
+
+#stars {
+    background-color: #000;
+    color:white;
+    padding:20px 0;
+}
+
+#stars .content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#stars .content .safe,
+#stars .content .legit{
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#slider-container .slider-wrapper{
+    width:100%;
+    height:300px;
+    background-color: red;
+    display: flex;
+}
+
+#slider-container .slider-wrapper .slider-content{
+    width:20%;
+    height:100%;
+    background-color: rgb(30, 30, 30);
+}
+
+#slider-container .slider-wrapper .slider-content .color-one{
+    width:100%;
+    height:30%;
+    background-color: black;
+}
+
+#slider-container .slider-wrapper .slider-content .style-one{
+    border-bottom-left-radius:70%;
+    border-bottom:5px dotted gray;
+}
+
+#slider-container .slider-wrapper .slider-content .color-two{
+    width:100%;
+    height: 70%;
+    background-color: rgb(30, 30, 30);
+}
+
+
+#slider-container .slider-wrapper .slider-content .style-two{
+    border-bottom-right-radius:70%;
+    border-bottom:5px dotted gray;
+}
+
+#slider-container .slider-wrapper .slider{
+    width:60%;
+    height:100%;
+    background-color: black;
+    overflow: hidden;
+}
+
+#slider-container .slider-wrapper .slider .slider-image-wrapper{
+    width:100%;
+    height:100%;
+    background-color: rgb(30, 30, 30);
+    overflow: hidden;
+}
+
+
+.slider .sliders-images .left-icon{
+    color: aliceblue;
+}
+
+.slider .sliders-images .right-icon{
+    color: aliceblue;
+}
+
+.slider .slider-image-wrapper .sliders-images{
+    width:100%;
+    height:100%;
+    background-color: rgb( 30, 30, 30);
+    animation: scale 1s ease;
+}
+
+.slider .slider-image-wrapper .sliders-images-result{
+    width:100%;
+    height:20%;
+}
+
+.slider-table table{
+    color: #fff;
+    width: 100%;
+    background-color: gray;
+}
+
+.slider-table table caption{
+    text-align: center;
+    text-transform: uppercase;
+    padding:20px 0;
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: gold;
+    background-color: rgb( 30, 30, 30);
+}
+
+.slider-table table th {
+    text-transform: uppercase;
+    padding:10px 0;
+    color:gold;
+}
+
+.slider-table table td{
+    text-align: center;
+    text-transform: capitalize;
+    padding:10px 0;
+    font-size: 18px;
+}
+
+.slider-table table td.won{
+    background-color: green;
+    color: blanchedalmond;
+}
+
+.slider-images-result h3{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    padding:15px 0;
+    color: #fff;
+    background-color: rgb(30, 30, 30);
+}
+
+#rolling-text-container {
+    width:100%;
+    height:50px;
+    background-color: gray;
+    display: flex;
+}
+
+#rolling-text-container .rolling-background{
+    width:30%;
+    height:100%;
+    background-color: #fff;
+}
+
+#rolling-text-container .rolling-background .background-one{
+    width:100%;
+    height:50%;
+    background-color: #000
+}
+
+#rolling-text-container .rolling-background .background-two{
+    width:100%;
+    height:50%;
+    background-color: rgb(30, 30, 30);
+}
+
+#rolling-text-container .rolling-text{
+    width:40%;
+    height:100%;
+    /* background-color: blue; */
+    color: gold;
+    display: flex;
+    align-items: center;
+    padding:0 20px;
+    border: 1px dotted gray;
+
+}
+
+#banker-container{
+    color:white;
+    background-color:rgb( 30, 30, 30);
+    width:100%;
+    /* height: 500px; */
+    display: flex;
+    justify-content: center;
+    padding:50px 10px;
+}
+
+#banker-container .banker-wrapper .banker-table-wrapper{
+    background-color: rgb( 30, 30, 30);
+    width:50%;
+}
+
+.banker-table-wrapper .bankertable{
+    width:100%;
+    /* border: 1px solid #fff; */
+    /* border-collapse: collapse; */
+}
+
+#banker-container .banker-wrapper h2{
+    text-align: center;
+    background-color: rgb( 30, 30, 30);
+    color:gold;
+    text-transform: uppercase;
+    padding:0 20px 20px 20px
+}
+
+.banker-table-wrapper .bankertable caption {
+    background-color: #000;
+    color: gold;
+    text-transform: capitalize;
+    padding:10px;
+    font-weight: 600;
+    font-size: 25px;
+    /* border:1px solid #000; */
+}
+
+.banker-table-wrapper .bankertable th {
+    background-color: #fff;
+    color: #000;
+    text-transform: uppercase;
+    padding:5px;
+    font-weight: 600;
+    text-align: center;
+    border:1px solid #000;
+    border-radius: 5px;
+}
+
+.banker-table-wrapper .bankertable td {
+    background-color: #000;
+    color: #fff;
+    text-transform: capitalize;
+    padding:5px;
+    font-weight: 300;
+    text-align: center;
+    border:2px solid#fff;
+    border-radius: 5px;
+}
+
+#banker-table-history-container {
+    display: flex;
+    justify-content: center;
+    padding: 50px 10px;
+}
+
+#banker-table-history-container .banker-table-history{
+    width:80%;
+}
+
+#banker-table-history-container .banker-table-history table{
+    width:100%;
+    border-spacing: 8px;
+}
+
+#banker-table-history-container .banker-table-history table caption h1{
+        text-transform: uppercase;
+        padding: 20px 0 20px 0;
+        background-color: gray;
+        color: #000;
+    }
+
+#banker-table-history-container .banker-table-history table th{
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    }
+
+#banker-table-history-container .banker-table-history table td{
+    border: 1px solid white;
+    text-transform: capitalize;
+    padding: 5px 12px;
+    border-radius: 5px;
+    text-align: center;
+    }
+
+#banker-table-history-container .banker-table-history table .lost{
+    background-color: red;
+    }
+
+#banker-table-history-container .banker-table-history table .won{
+    background-color: green;
+    }
+
+
+
+
+
+
+
+@keyframes scale {
+    0%{transform: scale(0.1);}
+    100%{transform: scale(1);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#forcast-section{
+    background-color: #000;
+    color: #fff;
+    width:100%;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-items: flex-end;
+    flex-direction: column;
+}
+
+#forcast-section .forcast-container{
+    width:90%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 70px;
+    margin: auto;
+}
+
+#forcast-section .forcast-container .forcast-table{
+    width: 100%;
+}
+
+.forcast-container h1{
+    text-transform: uppercase;
+    padding:20px 0 20px 0;
+    background-color: gray;
+    color:#000
+}
+
+.forcast-table table{
+    width:100%;
+    border:2px solid white;
+    border-collapse: collapse;
+}
+#forcast-section .forcast-container .forcast-table table th{
+    border:1px solid #000;
+    background-color: #fff;
+    color: #000;
+    text-transform: uppercase;
+    padding:5px 12px;
+}
+
+#forcast-section .forcast-container .forcast-table table td{
+    border:1px solid white;
+    text-transform: capitalize;
+    padding:5px 12px;
+}
+
+#forcast-section .forcast-container .forcast-table table .won{
+    background-color: green;
+    color:white;
+} 
+
+#forcast-section .forcast-container .forcast-table table .lost{
+    background-color: red;
+    color:white;
+} 
+
+#content-container .content-wrapper p{
+    color: #fff;
+    /* text-align: justify; */
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+#content-container{
+    padding:50px 100px;
+}
