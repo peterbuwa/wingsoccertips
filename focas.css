@@ -437,6 +437,32 @@ h3 {
     line-height: 30px;
 }
 
+
 #content-container{
     padding:50px 100px;
+}
+
+.viewmore12, .viewmore1X {
+    display: flex;
+    justify-content: end;
+}
+
+.viewmore12 p, .viewmore1X p{
+    padding:10px;
+}
+
+.viewmore12 p a, .viewmore1X p a{
+    color:gray;
+    transition: .5s ease-out;
+    font-size: 16px;
+}
+
+.viewmore12 p a:hover, .viewmore1X p a:hover{
+    color:white;
+}
+
+.forcast-container #previous-table12 {
+    margin:20px 0;
+    height:0;
+    overflow: hidden;
 }

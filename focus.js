@@ -1,3 +1,7 @@
+let viewMore12 = document.querySelector(".viewmore12");
+let previousTable12 = document.querySelector(".forcast-container #previous-table12")
+
+
 let sliderIndex = 0;
 
 plusSlides();
@@ -11,5 +15,14 @@ function plusSlides() {
     sliderIndex++;
     if (sliderIndex > table.length) { sliderIndex = 1 };
     table[sliderIndex - 1].style.display = "block";
-    setTimeout(plusSlides, 10000)
+    setTimeout(plusSlides, 2000)
 }
+
+
+                    // view more code
+
+    viewMore12.addEventListener("click", ()=>{
+        previousTable12.style.height = "100%";
+        viewMore12.style.display = "none"
+    }
+    )
